@@ -1,4 +1,4 @@
-<?php if (! defined ( 'BASEPATH' ))	exit ( 'No direct script access allowed' );
+<?php 
 
 
 /**
@@ -8,8 +8,8 @@
  * Required Resources : TCPDF PHP library, 
  * 
  */
-require 'tcpdf/tcpdf.php';
-require 'tcpdf/mypdf.php';
+// require 'tcpdf/tcpdf.php';
+// require 'tcpdf/mypdf.php';
 
 /**
  * Class SeoReport
@@ -57,8 +57,11 @@ class SeoReport{
 				$htmlInfo["isAlive"] = false;
 			}
 // 		}
+		$htmlInfo["url"] = $this->url;
+		$reqHTML = $this->getReadyHTML($htmlInfo);
+		return $reqHTML;
 		
-		$this->exportSEOReportPDF($htmlInfo, $this->url);
+		// $this->exportSEOReportPDF($htmlInfo, $this->url);
 	}
 	
 	/**
