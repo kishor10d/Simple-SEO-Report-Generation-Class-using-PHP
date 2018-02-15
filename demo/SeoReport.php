@@ -25,7 +25,7 @@ class SeoReport{
 	protected $start = null;
 	protected $end = null;
 	
-	function SeoReport($url = ""){
+	function __construct($url = ""){
 		$this->url = $url;
 	}
 	
@@ -212,7 +212,7 @@ class SeoReport{
 		curl_setopt($ch,CURLOPT_MAXREDIRS,2);
 		if(strtolower(parse_url($this->url, PHP_URL_SCHEME)) == 'https') {
 			curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,1);
-			curl_setopt($ch,CURLOPT_SSL_VERIFYHOST,1);
+			curl_setopt($ch,CURLOPT_SSL_VERIFYHOST,2);
 		}
 		$str = curl_exec($ch);
 		curl_close($ch);
