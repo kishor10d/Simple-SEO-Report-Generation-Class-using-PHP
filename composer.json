@@ -4,7 +4,7 @@
     "description": "PHP SEO Tools Class",
     "keywords": ["SEO","Analytics"],
     "homepage": "https://github.com/kishor10d/Simple-SEO-Report-Generation-Class-using-PHP",
-    "license": "GPL-3",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Kishor Mali",
