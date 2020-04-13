@@ -1,0 +1,19 @@
+{
+    "name": "kishor10d/seoreport",
+    "type": "library",
+    "description": "PHP SEO Tools Class",
+    "keywords": ["SEO","Analytics"],
+    "homepage": "https://github.com/kishor10d/Simple-SEO-Report-Generation-Class-using-PHP",
+    "license": "GPL-3",
+    "authors": [
+        {
+            "name": "Kishor Mali",
+            "email": "kishor10d@gmail.com",
+            "homepage": "http://codeinsect.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
